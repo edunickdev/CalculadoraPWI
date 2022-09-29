@@ -1,8 +1,5 @@
 
 #Menú de opciones
-from msilib import datasizemask
-
-
 exchange = int(input("""Elige el tipo de cambio que deseas hacer digitando el número de la opción deseada:
                     1. de pesos a dolares
                     2. de dolares a pesos.\n"""))
@@ -23,3 +20,4 @@ match exchange:
 
 #respuesta
 print ("El valor equivalente de su cambio de moneda es: " + str(cambio))
+
