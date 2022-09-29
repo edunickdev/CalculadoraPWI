@@ -21,6 +21,15 @@
 # #respuesta
 # print ("El valor equivalente de su cambio de moneda es: " + str(cambio))
 
+
+def conversor (tipo_moneda, valDolares):
+    cantidad = float(input("Ingrese el dinero en pesos Colombianos, que desea cambiar: "))
+
+    calculo = str(cantidad  / valDolares)
+    cambio = round(float(calculo), 2)
+
+    print ("El valor equivalente de su cambio de moneda es: " + str(cambio)) 
+
 menu = """ 
 Bienvenido al conversor de monedas 
 1 - Pesos Colombianos
@@ -32,28 +41,10 @@ Elie una opción: """
 opcion = int(input(menu))
 
 if opcion == 1:
-    valDolares = float(input("Ingrese el valor del dolar a hoy: "))
-    cantidad = float(input("Ingrese el dinero en pesos Colombianos, que desea cambiar: "))
-
-    calculo = str(cantidad  / valDolares)
-    cambio = round(float(calculo), 2)
-
-    print ("El valor equivalente de su cambio de moneda es: " + str(cambio))
+    conversor("Colombianos", float(input("Valor del dolar a hoy: ")))
 elif opcion == 2:
-    valDolares = float(input("Ingrese el valor del dolar a hoy: "))
-    cantidad = float(input("Ingrese el dinero en pesos Argentinos, que desea cambiar: "))
-
-    calculo = str(cantidad  / valDolares)
-    cambio = round(float(calculo), 2)
-
-    print ("El valor equivalente de su cambio de moneda es: " + str(cambio))
+    conversor("Argentinos", float(input("Valor del dolar a hoy: ")))
 elif opcion == 3:
-    valDolares = float(input("Ingrese el valor del dolar a hoy: "))
-    cantidad = float(input("Ingrese el dinero en pesos Mexicanos, que desea cambiar: "))
-
-    calculo = str(cantidad  / valDolares)
-    cambio = round(float(calculo), 2)
-
-    print ("El valor equivalente de su cambio de moneda es: " + str(cambio))
+    conversor("Mexicanos", float(input("Valor del dolar a hoy: ")))
 else:
     print ("Ingresa una opción correcta, por favor.")
