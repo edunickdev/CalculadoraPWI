@@ -2,7 +2,7 @@
 ######### INICIO FUNCIONES ###############
 
 def conversor (tipo_moneda, valDolares):
-    cantidad = float(input("Ingrese el dinero en pesos Colombianos, que desea cambiar: "))
+    cantidad = int(input("Ingrese el dinero en pesos Colombianos, que desea cambiar: "))
 
     calculo = str(cantidad  / valDolares)
     cambio = round(float(calculo), 2)
@@ -11,50 +11,42 @@ def conversor (tipo_moneda, valDolares):
 
 ######### FIN FUNCIONES ###############
 
-######### INICIO MENU ###############
-menu = """ 
-Bienvenido al conversor de monedas 
-1 - Pesos Colombianos
-2 - Pesos Argentinos
-3 - Pesos Mexicanos
+######### INICIO MENU con If y else y elif ###############
+# menu = """ 
+# Bienvenido al conversor de monedas 
+# 1 - Pesos Colombianos
+# 2 - Pesos Argentinos
+# 3 - Pesos Mexicanos
 
-Elie una opción: """
+# Elie una opción: """
 
-opcion = int(input(menu))
+# opcion = int(input(menu))
 
-if opcion == 1:
-    conversor("Colombianos", float(input("Valor del dolar a hoy: ")))
-elif opcion == 2:
-    conversor("Argentinos", float(input("Valor del dolar a hoy: ")))
-elif opcion == 3:
-    conversor("Mexicanos", float(input("Valor del dolar a hoy: ")))
-else:
-    print ("Ingresa una opción correcta, por favor.")
+# if opcion == 1:
+#     conversor("Colombianos", float(input("Valor del dolar a hoy: ")))
+# elif opcion == 2:
+#     conversor("Argentinos", float(input("Valor del dolar a hoy: ")))
+# elif opcion == 3:
+#     conversor("Mexicanos", float(input("Valor del dolar a hoy: ")))
+# else:
+#     print ("Ingresa una opción correcta, por favor.")
 
 ######### FIN MENU ###############
 
 ######### INICIO MENU con match y cases python 3.10 ###############
 
-# #Menú de opciones
-# exchange = int(input("""Elige el tipo de cambio que deseas hacer digitando el número de la opción deseada:
-#                     1. de pesos a dolares
-#                     2. de dolares a pesos.\n"""))
+#Menú de opciones
+exchange = int(input("""Elige el tipo de cambio que deseas hacer digitando el número de la opción deseada:
+                    1. Pesos Colombianos
+                    2. Pesos Argentinos
+                    3. Pesos Mexicanos.\n"""))
 
-# match exchange:
-#     case 1:
-#         valDolares = float(input("Ingrese el valor del dolar a hoy: "))
-#         cantidad = float(input("Ingrese el dinero en pesos, que desea cambiar: "))
-
-#         calculo = str(cantidad  / valDolares)
-#         cambio = round(float(calculo), 2)
-#     case 2:
-#         valPesos = float(input("Ingrese el valor representativo del peso a hoy: "))
-#         cantidad = float(input("Ingrese la cantidad de dolares, que desea cambiar: "))
-
-#         calculo = str(cantidad * valPesos)
-#         cambio = float(calculo)
-
-# #respuesta
-# print ("El valor equivalente de su cambio de moneda es: " + str(cambio))
+match exchange:
+    case 1:
+        conversor("Colombianos", float(input("Valor del dolar a hoy: ")))
+    case 2:
+        conversor("Argentinos", float(input("Valor del dolar a hoy: ")))
+    case 3:
+        conversor("Mexic", float(input("Valor del dolar a hoy: ")))
 
 ######### INICIO MENU con match y cases python 3.10 ###############
