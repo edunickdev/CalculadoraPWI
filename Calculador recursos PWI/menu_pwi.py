@@ -1,8 +1,4 @@
-
-from numpy import mat
-
-
-def run():
+def identificaicon():
     nombres = input('Escriba su nombre: ').upper
     nickname = input('Escribe del nickname de tu pj: (digita player1, si prefieres omitirlo): ').upper
     server = int(input(
@@ -30,39 +26,40 @@ def run():
             3. EdgeRunner 
             """))
         case 2:
-            clase = int(print(
+            clase = int(input(
             """Elija el número que corresponde a la clase de su pj: 
             1. Assasin
-            2. Physic 
+            2. Physic
             """))
         case 3:
-            clase = int(print(
+            clase = int(input(
             """Elija el número que corresponde a la clase de su pj: 
             1. Barbarian
             2. Venomancer
             3. Wildwalker 
             """))
         case 4:
-            clase = int(print(
+            clase = int(input(
             """Elija el número que corresponde a la clase de su pj: 
             1. Barbarian
             2. Venomancer
             3. Wildwalker 
             """))
         case 5:
-            clase = int(print(
+            clase = int(input(
             """Elija el número que corresponde a la clase de su pj: 
             1. Blademaster
             2. Wizard 
             3. Technician
             """))
         case 6:
-            clase = int(print(
+            clase = int(input(
             """Elija el número que corresponde a la clase de su pj: 
             1. Duskblade
             2. Stormbringer 
             """))
 
+    id [server, raza, clase]
 
 if __name__ == '__main__':
-    run()
+    identificaicon()
