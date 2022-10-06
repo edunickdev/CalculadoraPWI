@@ -41,9 +41,8 @@ def identificaicon():
         case 4:
             clase = int(input(
             """Elija el número que corresponde a la clase de su pj: 
-            1. Barbarian
-            2. Venomancer
-            3. Wildwalker 
+            1. Seeker
+            2. Mystic 
             """))
         case 5:
             clase = int(input(
@@ -58,8 +57,6 @@ def identificaicon():
             1. Duskblade
             2. Stormbringer 
             """))
-
-    id [server, raza, clase]
 
 if __name__ == '__main__':
     identificaicon()
