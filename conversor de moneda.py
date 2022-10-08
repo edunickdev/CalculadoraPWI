@@ -2,9 +2,9 @@
 ######### INICIO FUNCIONES ###############
 
 def conversoraDolar (tipo_moneda, valDolares):
-    cantidad = float(input("Ingrese el dinero en su moneda, que desea cambiar: "))
+    cantidad = float(input("Ingrese el dinero en su moneda, que  desea cambiar: "))
 
-    calculo = str(cantidad  / valDolares)
+    calculo = str(cantidad / valDolares)
     cambio = round(float(calculo), 2)
 
     print ("El valor equivalente de su cambio de moneda es: " + str(cambio))
